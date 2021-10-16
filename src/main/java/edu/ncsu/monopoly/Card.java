@@ -3,7 +3,7 @@ package edu.ncsu.monopoly;
 public abstract class Card {
 	
 	//i have added a new comment
-
+	//new comment
     public static final int TYPE_CHANCE = 1;
     public static final int TYPE_CC = 2;
 
