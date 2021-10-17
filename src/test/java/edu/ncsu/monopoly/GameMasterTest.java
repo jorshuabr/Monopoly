@@ -33,7 +33,7 @@ public class GameMasterTest extends TestCase {
 			Player player = gameMaster.getPlayer(i);
 			assertEquals("Go", player.getPosition().getName());
 		}
-		assertEquals(0, gameMaster.getTurn());
+		assertEquals(0, gameMaster.getCurrentPlayerIndex());
 	}
     
     public void testTradeProcess() {
@@ -63,11 +63,11 @@ public class GameMasterTest extends TestCase {
     }
 	
 	public void testTurn() {
-		assertEquals(0, gameMaster.getTurn());
+		assertEquals(0, gameMaster.getCurrentPlayerIndex());
 		gameMaster.switchTurn();
-		assertEquals(1, gameMaster.getTurn());
+		assertEquals(1, gameMaster.getCurrentPlayerIndex());
 		gameMaster.switchTurn();
-		assertEquals(0, gameMaster.getTurn());
+		assertEquals(0, gameMaster.getCurrentPlayerIndex());
 	}
 	
 	public void testButtonGetOutOfJailClicked() {
