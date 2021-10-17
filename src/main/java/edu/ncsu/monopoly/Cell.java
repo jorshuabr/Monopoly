@@ -4,7 +4,7 @@ public abstract class Cell {
 	private boolean available = true;
 	private String name;
 	protected Player owner;
-	final int zero = 0;
+	static final int zero = 0;
 
 	public String getName() {
 		return name;

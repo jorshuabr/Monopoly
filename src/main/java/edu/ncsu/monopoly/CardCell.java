@@ -8,7 +8,9 @@ public class CardCell extends Cell {
         this.type = type;
     }
     
-    //metodo hereado de la clase cell
+    /*
+     * metodo hereado de la clase cell
+     */
     public void playAction() {
     }
     

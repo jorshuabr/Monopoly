@@ -6,7 +6,9 @@ public class FreeParkingCell extends Cell {
 		setName("Free Parking");
 	}
 	
-	//método heredado de la clase cell
+	/*
+	 * método heredado de la clase cell
+	 */
 	public void playAction() {
 	}
 }
