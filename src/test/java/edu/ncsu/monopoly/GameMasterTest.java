@@ -56,8 +56,8 @@ public class GameMasterTest extends TestCase {
         Player player2 = gameMaster.getPlayer(1);
         assertTrue(respond.getResponse());
         gameMaster.completeTrade(deal);
-        assertEquals(1440 + deal.getAmount(), player1.getMoney());
-        assertEquals(1500 - deal.getAmount(), player2.getMoney());
+        assertEquals(1440.0 + deal.getAmount(), player1.getMoney());
+        assertEquals(1500.0 - deal.getAmount(), player2.getMoney());
         assertFalse(player1.checkProperty(deal.getPropertyName()));
         assertTrue(player2.checkProperty(deal.getPropertyName()));
     }
@@ -81,7 +81,7 @@ public class GameMasterTest extends TestCase {
 		assertTrue(gameMaster.getPlayer(0).isInJail());
 		gameMaster.btnGetOutOfJailClicked();
 		assertFalse(gameMaster.getPlayer(0).isInJail());
-		assertEquals(1450,gameMaster.getPlayer(0).getMoney());
+		assertEquals(1450.0,gameMaster.getPlayer(0).getMoney());
 	}
 	
 	public void testButtonPurchasePropertyClicked() {
@@ -89,7 +89,7 @@ public class GameMasterTest extends TestCase {
 		gameMaster.movePlayer(0,1);
 		gameMaster.btnPurchasePropertyClicked();
 		assertEquals(gameMaster.getGameBoard().getCell(1), gameMaster.getCurrentPlayer().getAllProperties()[0]);
-		assertEquals(1440,gameMaster.getCurrentPlayer().getMoney());
+		assertEquals(1440.0,gameMaster.getCurrentPlayer().getMoney());
 	}
 	
 	public void testButtonRollDiceClicked() {
@@ -107,7 +107,7 @@ public class GameMasterTest extends TestCase {
 		gameMaster.btnEndTurnClicked();
 		gameMaster.btnTradeClicked();
 		assertEquals(gameMaster.getGameBoard().getCell(1),gameMaster.getCurrentPlayer().getAllProperties()[0]);
-		assertEquals(1640,gameMaster.getPlayer(0).getMoney());
-		assertEquals(1300,gameMaster.getPlayer(1).getMoney());
+		assertEquals(1640.0,gameMaster.getPlayer(0).getMoney());
+		assertEquals(1300.0,gameMaster.getPlayer(1).getMoney());
 	}
 }

@@ -37,6 +37,6 @@ public class MovePlayerCardTest extends TestCase {
 		Cell cell = gameMaster.getCurrentPlayer().getPosition();
 		assertEquals(gameMaster.getGameBoard().queryCell("Blue 1"), cell);
 		assertTrue(gameMaster.getGUI().isEndTurnButtonEnabled());
-		assertEquals(1700, gameMaster.getCurrentPlayer().getMoney());
+		assertEquals(1700.0, gameMaster.getCurrentPlayer().getMoney());
     }
 }

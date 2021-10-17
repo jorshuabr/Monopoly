@@ -1,11 +1,11 @@
 package edu.ncsu.monopoly;
 
 public class TradeDeal {
-    private int amount;
+    private double amount;
     private int playerIndex;
     private String propertyName;
 
-    public int getAmount() {
+    public double getAmount() {
         return amount;
     }
     

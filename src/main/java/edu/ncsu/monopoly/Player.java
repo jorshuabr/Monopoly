@@ -221,7 +221,7 @@ public class Player {
 	    buyProperty(cell, cell.getPrice());
 	}
 
-    public void sellProperty(Cell property, int amount) {
+    public void sellProperty(Cell property, double d) {
         property.setOwner(null);
         if(property instanceof PropertyCell) {
             properties.remove(property);
@@ -232,7 +232,7 @@ public class Player {
         if(property instanceof UtilityCell) {
             utilities.remove(property);
         }
-        setMoney(getMoney() + amount);
+        setMoney(getMoney() + d);
     }
 
 	public void setInJail(boolean inJail) {

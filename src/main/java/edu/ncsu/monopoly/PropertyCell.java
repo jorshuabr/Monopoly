@@ -5,7 +5,7 @@ public class PropertyCell extends Cell {
 	private int housePrice;
 	private int numHouses;
 	private int rent;
-	private int sellPrice;
+	private double sellPrice;
 
 	public String getColorGroup() {
 		return colorGroup;
@@ -59,8 +59,8 @@ public class PropertyCell extends Cell {
 		this.numHouses = numHouses;
 	}
 
-	public void setPrice(int sellPrice) {
-		this.sellPrice = sellPrice;
+	public void setPrice(double propertyValue) {
+		this.sellPrice = propertyValue;
 	}
 
 	public void setRent(int rent) {

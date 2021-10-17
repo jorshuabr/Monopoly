@@ -19,7 +19,7 @@ public class PlayerTest extends TestCase {
 		gameMaster.movePlayer(0, 3);
 		Player player = gameMaster.getPlayer(0);
 		player.purchase();
-		assertEquals(1380, player.getMoney());
+		assertEquals(1380.0, player.getMoney());
 		assertEquals("Blue 3", player.getProperty(0).getName());
 		PropertyCell cell =
 			(PropertyCell) gameMaster.getGameBoard().queryCell("Blue 3");
@@ -43,7 +43,7 @@ public class PlayerTest extends TestCase {
 		gameMaster.movePlayer(1,4);
 		gameMaster.btnEndTurnClicked();
 		assertTrue(gameMaster.getPlayer(1).isBankrupt());
-		assertEquals(2800, gameMaster.getPlayer(0).getMoney());
+		assertEquals(2800.0, gameMaster.getPlayer(0).getMoney());
 	}
 	
 	public void testExchangeProperty() {
@@ -69,7 +69,7 @@ public class PlayerTest extends TestCase {
 		gameMaster.btnEndTurnClicked();
 		gameMaster.getCurrentPlayer().purchaseHouse("blue",2);
 		assertEquals("blue", gameMaster.getCurrentPlayer().getMonopolies()[0]);
-		assertEquals(880, gameMaster.getCurrentPlayer().getMoney());
+		assertEquals(880.0, gameMaster.getCurrentPlayer().getMoney());
 	}
 	
 	public void testResetProperty() {

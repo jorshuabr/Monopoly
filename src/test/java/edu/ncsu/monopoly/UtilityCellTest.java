@@ -34,10 +34,10 @@ public class UtilityCellTest extends TestCase {
 		cell.playAction();
 		int diceRoll = gameMaster.getUtilDiceRoll();
 		assertEquals(
-				1500 - cell.getRent(diceRoll),
+				1500.0 - cell.getRent(diceRoll),
 				gameMaster.getPlayer(1).getMoney());
 		assertEquals(
-				1350 + cell.getRent(diceRoll),
+				1350.0 + cell.getRent(diceRoll),
 				gameMaster.getPlayer(0).getMoney());
 	}
 
@@ -46,7 +46,7 @@ public class UtilityCellTest extends TestCase {
 		int cellIndex = gameMaster.getGameBoard().queryCellIndex("Utility 1");
 		gameMaster.movePlayer(0, cellIndex);
 		gameMaster.getPlayer(0).purchase();
-		assertEquals(1350, gameMaster.getPlayer(0).getMoney());
+		assertEquals(1350.0, gameMaster.getPlayer(0).getMoney());
 		assertEquals(1, gameMaster.getPlayer(0).numberOfUtil());
 	}
 
