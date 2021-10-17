@@ -6,16 +6,18 @@ public class GameBoardCCMovePlayer extends GameBoard {
 		super();
 		PropertyCell blue1 = new PropertyCell();
 		PropertyCell blue2 = new PropertyCell();
+		String blue01 = "Blue 1";
+		String blue02 = "Blue 2";
+		
         CardCell cc1 = new CardCell(Card.TYPE_CC, "Community Chest 1");
         JailCell jail = new JailCell();
         CardCell chance1 = new CardCell(Card.TYPE_CHANCE, "Chance 1");
         
-        Card ccCard1 = new MovePlayerCard("Blue 1" , Card.TYPE_CC);
-        Card ccCard2 = new MovePlayerCard("Blue 2", Card.TYPE_CC);
-        Card chanceCard1 = new MovePlayerCard("Blue 1", Card.TYPE_CHANCE);
+        Card ccCard1 = new MovePlayerCard(blue01 , Card.TYPE_CC);
+        Card ccCard2 = new MovePlayerCard(blue02, Card.TYPE_CC);
 		
-		blue1.setName("Blue 1");
-		blue2.setName("Blue 2");
+		blue1.setName(blue01);
+		blue2.setName(blue02);
 		
 		blue1.setColorGroup("blue");
 		blue2.setColorGroup("blue");

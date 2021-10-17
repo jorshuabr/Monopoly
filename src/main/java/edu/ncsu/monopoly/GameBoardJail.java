@@ -11,17 +11,20 @@ public class GameBoardJail extends GameBoard {
 		JailCell jail = new JailCell();
 		GoToJailCell goToJail = new GoToJailCell();
 		
+		String b1 = "blue";
+		String b2 = "green";
+		
 		blue1.setName("Blue 1");
 		blue2.setName("Blue 2");
 		blue3.setName("Blue 3");
 		green1.setName("Green 1");
 		green2.setName("Green 2");
 		
-		blue1.setColorGroup("blue");
-		blue2.setColorGroup("blue");
-		blue3.setColorGroup("blue");
-		green1.setColorGroup("green");
-		green2.setColorGroup("green");
+		blue1.setColorGroup(b1);
+		blue2.setColorGroup(b1);
+		blue3.setColorGroup(b1);
+		green1.setColorGroup(b2);
+		green2.setColorGroup(b2);
 		
 		blue1.setPrice(100);
 		blue2.setPrice(100);
