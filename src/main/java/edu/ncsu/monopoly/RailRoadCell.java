@@ -18,7 +18,7 @@ public class RailRoadCell extends Cell {
 	}
 
 	public double getRent() {
-		return RailRoadCell.baseRent * Math.pow(2, owner.numberOfRR() - 1);
+		return RailRoadCell.baseRent * (double)Math.pow(2, owner.numberOfRR() - 1);
 	}
 	
 	public void playAction() {
