@@ -1,7 +1,6 @@
 package edu.ncsu.monopoly;
 
 import java.util.Random;
-import com.objectdb.o.CLN.r;
 
 public class Die {
 	public int getRoll() {
