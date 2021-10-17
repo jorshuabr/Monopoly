@@ -17,7 +17,7 @@ public class LoseMoneyCardTest extends TestCase {
     }
     
     public void testLoseMoneyCardAction() {
-        int origMoney = gameMaster.getCurrentPlayer().getMoney();
+        double origMoney = gameMaster.getCurrentPlayer().getMoney();
 		Card card = gameMaster.drawCCCard();
 		assertEquals(loseMoneyCard, card);
 		card.applyAction();

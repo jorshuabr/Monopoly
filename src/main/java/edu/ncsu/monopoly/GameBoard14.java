@@ -2,6 +2,8 @@ package edu.ncsu.monopoly;
 
 
 public class GameBoard14 extends GameBoard {
+	final String green = "green";
+	
 	public GameBoard14() {
 		super();
 		PropertyCell blue1 = new PropertyCell();
@@ -25,11 +27,11 @@ public class GameBoard14 extends GameBoard {
 		blue3.setName("Blue 3");
         blue3.setColorGroup("blue");
 		green1.setName("Green 1");
-        green1.setColorGroup("green");
+        green1.setColorGroup(green);
 		green2.setName("Green 2");
-        green2.setColorGroup("green");
+        green2.setColorGroup(green);
 		green3.setName("Green 3");
-        green3.setColorGroup("green");
+        green3.setColorGroup(green);
 		red1.setName("Red 1");
         red1.setColorGroup("red");
 		red2.setName("Red 2");

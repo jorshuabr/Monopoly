@@ -4,6 +4,7 @@ public abstract class Cell {
 	private boolean available = true;
 	private String name;
 	protected Player owner;
+	final int zero = 0;
 
 	public String getName() {
 		return name;
@@ -13,8 +14,8 @@ public abstract class Cell {
 		return owner;
 	}
 	
-	public int getPrice() {
-		return 0;
+	public double getPrice() {
+		return zero;
 	}
 
 	public boolean isAvailable() {

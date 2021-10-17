@@ -215,7 +215,7 @@ public class GameMaster {
 		    gui.setDrawCardEnabled(true);
 		} else{
 			if(cell.isAvailable()) {
-				int price = cell.getPrice();
+				double price = cell.getPrice();
 				if(price <= player.getMoney() && price > 0) {
 					gui.enablePurchaseBtn(playerIndex);
 				}

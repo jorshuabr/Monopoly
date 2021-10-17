@@ -9,7 +9,7 @@ public class Player {
 	//the key of colorGroups is the name of the color group.
 	private Hashtable colorGroups = new Hashtable();
 	private boolean inJail;
-	private int money;
+	private double money;
 	private String name;
 
 	private Cell position;
@@ -25,7 +25,7 @@ public class Player {
 		}
 	}
 
-    public void buyProperty(Cell property, int amount) {
+    public void buyProperty(Cell property, double amount) {
         property.setOwner(this);
         if(property instanceof PropertyCell) {
             PropertyCell cell = (PropertyCell)property;
@@ -90,7 +90,7 @@ public class Player {
         return (Cell[])list.toArray(new Cell[list.size()]);
     }
 
-	public int getMoney() {
+	public double getMoney() {
 		return this.money;
 	}
 	
@@ -160,7 +160,7 @@ public class Player {
 		return getPropertyNumberForColor(UtilityCell.COLOR_GROUP);
 	}
 	
-	public void payRentTo(Player owner, int rentValue) {
+	public void payRentTo(Player owner, double rentValue) {
 		if(money < rentValue) {
 			owner.money += money;
 			money -= rentValue;
@@ -239,8 +239,8 @@ public class Player {
 		this.inJail = inJail;
 	}
 
-	public void setMoney(int money) {
-		this.money = money;
+	public void setMoney(double d) {
+		this.money = d;
 	}
 
 	public void setName(String name) {

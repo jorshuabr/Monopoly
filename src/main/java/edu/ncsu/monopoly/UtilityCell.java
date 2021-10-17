@@ -9,7 +9,7 @@ public class UtilityCell extends Cell {
 		UtilityCell.PRICE = price;
 	}
 
-	public int getPrice() {
+	public double getPrice() {
 		return UtilityCell.PRICE;
 	}
 

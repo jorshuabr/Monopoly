@@ -19,7 +19,7 @@ public class PropertyCell extends Cell {
 		return numHouses;
 	}
     
-    public int getPrice() {
+    public double getPrice() {
 		return sellPrice;
 	}
 

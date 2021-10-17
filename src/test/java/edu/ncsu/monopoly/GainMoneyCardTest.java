@@ -17,7 +17,7 @@ public class GainMoneyCardTest extends TestCase {
     }
     
     public void testGainMoneyCardAction() {
-        int origMoney = gameMaster.getCurrentPlayer().getMoney();
+        double origMoney = gameMaster.getCurrentPlayer().getMoney();
 		Card card = gameMaster.drawCCCard();
 		assertEquals(gainMoneyCard, card);
 		card.applyAction();
